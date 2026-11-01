@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>医疗服务 — 示例医院</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <p class="demo-notice" role="note">演示模板：文案、医生、评价和地址均为占位，预约不会发送。</p>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">医</span>
+          <span>示例医院</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="main-nav" aria-label="主导航">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">医院简介</a></li>
+            <li><a href="departments.html">科室介绍</a></li>
+            <li><a href="appointment.html">预约挂号</a></li>
+            <li><a href="guide.html">就诊指南</a></li>
+            <li><a href="services.html" class="active">医疗服务</a></li>
+            <li><a href="health.html">健康资讯</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="reviews.html">患者评价</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>医疗服务</h1>
+        <p class="lead">检查、治疗、住院与手术等核心服务概览。</p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="accordion" role="region" aria-label="医疗服务">
+        <div class="accordion-item is-open">
+          <button type="button" class="accordion-trigger">医学检查</button>
+          <div class="accordion-panel">
+            <p>
+              提供实验室检验、医学影像（CT、MRI、超声、X 线）、功能检查（心电图、肺功能等）等服务。多数检查需预约，请遵医嘱准备（如空腹、停药等）。
+            </p>
+            <ul>
+              <li>门诊开立检查单 → 缴费 → 预约时段 → 按时到检。</li>
+              <li>报告领取方式以科室告知为准（窗口、自助机或线上）。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">门诊与治疗</button>
+          <div class="accordion-panel">
+            <p>
+              各专科门诊提供药物与非药物治疗方案；部分项目可在日间治疗中心完成，减少住院时间。
+            </p>
+            <ul>
+              <li>慢性病长处方与随访管理（以科室政策为准）。</li>
+              <li>多学科会诊（MDT）适用于肿瘤、疑难病等（示例）。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">住院服务</button>
+          <div class="accordion-panel">
+            <p>
+              入院需医生开具住院证，办理入院手续后入住病区。病区提供分级护理、营养配餐、探视管理等。请配合医院感染防控要求。
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">手术与麻醉</button>
+          <div class="accordion-panel">
+            <p>
+              择期手术需完成术前评估与麻醉门诊评估。急诊手术由绿色通道保障。术后恢复与镇痛方案由手术团队与麻醉科共同制定。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" style="margin-top: 2rem">
+        <h2 class="section-title">快速入口</h2>
+        <p>
+          <a class="btn btn-primary" href="appointment.html">预约挂号</a>
+          <a class="btn btn-outline" href="departments.html">科室介绍</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">示例医院</p>
+            <p>主院区：北京市朝阳区健康路 88 号</p>
+          </div>
+          <div>
+            <p class="footer-title">联系电话</p>
+            <p>总机：<span>未配置</span></p>
+          </div>
+          <div>
+            <p class="footer-title">办公时间</p>
+            <p>门诊：周一至周日 8:00–17:00</p>
+          </div>
+        </div>
+        <p class="copyright">© 2026 示例医院 · 本网站为演示模板。</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>预约挂号 — 示例医院</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <p class="demo-notice" role="note">演示模板：文案、医生、评价和地址均为占位，预约不会发送。</p>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">医</span>
+          <span>示例医院</span>
+        </a>
+        <button type="button" class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="main-nav" aria-label="主导航">
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">医院简介</a></li>
+            <li><a href="departments.html">科室介绍</a></li>
+            <li><a href="appointment.html" class="active">预约挂号</a></li>
+            <li><a href="guide.html">就诊指南</a></li>
+            <li><a href="services.html">医疗服务</a></li>
+            <li><a href="health.html">健康资讯</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="reviews.html">患者评价</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>预约挂号</h1>
+        <p class="lead">选择科室、医生与时段，提交后请留意短信或电话通知（演示表单）。</p>
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="section">
+        <form id="appointment-form" class="form-grid" novalidate>
+          <div class="form-row">
+            <label for="dept">就诊科室 <span style="color: var(--color-urgent)">*</span></label>
+            <select id="dept" name="dept" required>
+              <option value="">请选择科室</option>
+              <option value="cardio">心血管内科</option>
+              <option value="gi">消化内科</option>
+              <option value="ortho">骨科</option>
+              <option value="obgyn">妇产科</option>
+              <option value="peds">儿科</option>
+              <option value="ent">耳鼻喉科</option>
+              <option value="derm">皮肤科</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="doctor">医生 <span style="color: var(--color-urgent)">*</span></label>
+            <select id="doctor" name="doctor" required>
+              <option value="">请先选择科室后选择医生</option>
+              <option value="any">普通号（不指定医生）</option>
+              <option value="doctor-a">示例医生A（主任医师）</option>
+              <option value="doctor-b">示例医生B（副主任医师）</option>
+              <option value="doctor-c">示例医生C（主治医师）</option>
+            </select>
+            <p class="form-hint">实际系统中医生列表会随科室联动加载。</p>
+          </div>
+          <div class="form-row">
+            <label for="date">希望就诊日期 <span style="color: var(--color-urgent)">*</span></label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-row">
+            <label for="slot">时段偏好</label>
+            <select id="slot" name="slot">
+              <option value="am">上午（8:00–12:00）</option>
+              <option value="pm">下午（13:00–17:00）</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="name">患者姓名 <span style="color: var(--color-urgent)">*</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="与证件一致" />
+          </div>
+          <div class="form-row">
+            <label for="phone">手机号码 <span style="color: var(--color-urgent)">*</span></label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="用于接收预约结果" />
+          </div>
+          <div class="form-row">
+            <label for="idtype">证件类型</label>
+            <select id="idtype" name="idtype">
+              <option value="id">居民身份证</option>
+              <option value="passport">护照</option>
+              <option value="other">其他</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="note">备注（选填）</label>
+            <textarea id="note" name="note" placeholder="如过敏史、复诊说明等"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">提交预约</button>
+            <p class="form-hint" style="margin-top: 0.75rem">
+              本页面为静态模板，提交不会写入真实系统。上线请对接医院 HIS 或统一预约平台。
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">示例医院</p>
+            <p>主院区：北京市朝阳区健康路 88 号</p>
+          </div>
+          <div>
+            <p class="footer-title">联系电话</p>
+            <p>总机：<span>未配置</span></p>
+          </div>
+          <div>
+            <p class="footer-title">办公时间</p>
+            <p>门诊：周一至周日 8:00–17:00</p>
+          </div>
+        </div>
+        <p class="copyright">© 2026 示例医院 · 本网站为演示模板。</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
